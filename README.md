@@ -6,4 +6,4 @@ zero to one about java
 * [日志](#日志)
 
 ## 日志
-- [xxx](http://www.xxx.com)
+- [xxx](http://www.baidu.com)
