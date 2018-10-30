@@ -52,7 +52,7 @@
    # reset CHARSET for alibaba opts, we use GBK
      [[ -x /opt/taobao/java ]] && JVM_OPTS="-Dinput.encoding=GBK ${JVM_OPTS} "
    ```
-   - 3）接下来检查执行命令传入的参数parse_arguments，对help，versions等常用命令加以判断，输出对应内容，当然这里也支持脚本BATCH_SCRIPT作为参数输入执行，接下来你应该会看到debug的判断，这里支持debug模式-agentlib:jdwp:transport=dt_socket,server=y,suspend=n,address=8888，其实用过ide debug模式的话一样的道理（这里好像直接debug有点问题，需要debug+pid才行，看[issues][2] , 3.0.5版本应该会修复）;
+   -  3）接下来检查执行命令传入的参数parse_arguments，对help，versions等常用命令加以判断，输出对应内容，当然这里也支持脚本BATCH_SCRIPT作为参数输入执行，接下来你应该会看到debug的判断，这里支持debug模式-agentlib:jdwp:transport=dt_socket,server=y,suspend=n,address=8888，其实用过ide debug模式的话一样的道理（这里好像直接debug有点问题，需要debug+pid才行，看[issues][2] , 3.0.5版本应该会修复）;
    然后你会看到下面的代码，获取到关键的ip，以及端口。然后for遍历java进程。等待选择（read choice），你选择了合适的端口,最终拿到了合适的pid（TARGET_PID=`echo ${CANDIDATES[$(($choice-1))]} | cut -d ' ' -f 1`）
    #### 代码块
      ``` sh
@@ -84,11 +84,11 @@
             fi
         done
      ```
-   - 4) 是否版本更新的判断（update_if_necessary）,通过curl获取远程的版本，检查本地服务器lib下面有木有这个版本.
+   -  4) 是否版本更新的判断（update_if_necessary）,通过curl获取远程的版本，检查本地服务器lib下面有木有这个版本.
     ![版本](../../../imgs/arthas.png)
     比如我服务器下现在是3.0.4的版本,远程最新版本没有的话，那就更新下来zip包，然后用unzip解压（所以之前unzip检查的必要性，好像老版本这块都没检查，当时自己修改了脚本，直接 yum install -y unzip zip安装了）。最后你会看到脚本执行进入的时候有个进度条一样的，其实就是下载。
-   - 5）然后是sanity_check，这个主要是判断pid存不存在，当前执行的用户是不是启动这个pid的用户，所以这里需要保证用户一致性。
-   - 6）这一步attach_jvm是最重要的啦，attach进程；这里通过maven jar包manifest mainClass指定arthas-core里面的com.taobao.arthas.core.Arthas类
+   -  5）然后是sanity_check，这个主要是判断pid存不存在，当前执行的用户是不是启动这个pid的用户，所以这里需要保证用户一致性。
+   -  6）这一步attach_jvm是最重要的啦，attach进程；这里通过maven jar包manifest mainClass指定arthas-core里面的com.taobao.arthas.core.Arthas类
      #### 代码块
      ``` sh
      if [ ${TARGET_IP} = ${DEFAULT_TARGET_IP} ]; then
@@ -103,7 +103,7 @@
               -agent "${arthas_lib_dir}/arthas-agent.jar"
      fi
      ```
-   - 7) Arthas类做了什么事情呢？如下：主要是利用了tool.jar这个包中的VirtualMachine.attach(pid)来实现，同时上面加载了自定义的agent代理,见下面 virtualMachine.loadAgent（agent后面会详细说明），这样就建立了连接。（如果感兴趣的话，可以去详细了解下attach底层技术JVMTI）
+   -  7) Arthas类做了什么事情呢？如下：主要是利用了tool.jar这个包中的VirtualMachine.attach(pid)来实现，同时上面加载了自定义的agent代理,见下面 virtualMachine.loadAgent（agent后面会详细说明），这样就建立了连接。（如果感兴趣的话，可以去详细了解下attach底层技术JVMTI）
    #### 代码块
    ``` java
      private void attachAgent(Configure configure) throws Exception {
@@ -144,7 +144,7 @@
         }
     ```
 
-   - 8) Attach success后，调用active_console，主要进行telnet通讯。
+   -  8) Attach success后，调用active_console，主要进行telnet通讯。
        telnet ${TARGET_IP} ${TELNET_PORT}，最后你会看到如下图: ![telent](../../../imgs/telnet.png)
 
 
