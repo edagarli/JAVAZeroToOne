@@ -1,6 +1,6 @@
 ##  Arthas第二篇之agent代理分析
 
-[工具化|Arthas](https://github.com/edagarli/JAVAZeroToOne/blob/4071edfb8436a442ea8fb44fa08dc33bda8d8aaf/docs/tools/arthas/arthas-second.md)
+[工具化|Arthas](https://github.com/edagarli/JAVAZeroToOne/blob/master/docs/tools/arthas/arthas-second.md)
 
 接着上一篇，这一篇讨论arthas-agent代理这块。
 

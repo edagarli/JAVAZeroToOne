@@ -1,6 +1,6 @@
 ##  Arthas第一篇之初步脚本分析
 
-[工具化|Arthas](https://github.com/edagarli/JAVAZeroToOne/blob/4071edfb8436a442ea8fb44fa08dc33bda8d8aaf/docs/tools/arthas/arthas-first.md)
+[工具化|Arthas](https://github.com/edagarli/JAVAZeroToOne/blob/master/docs/tools/arthas/arthas-first.md)
 
 **Arthas**这里不多介绍简介了，具体看[Github][1]上详细的介绍。简单来说**Arthas**就是Java诊断工具，可以方便线上问题的定位和诊断。
 
