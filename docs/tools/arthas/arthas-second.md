@@ -143,7 +143,7 @@ private static void initSpy(ClassLoader classLoader) throws ClassNotFoundExcepti
            UserStatUtil.arthasStart();
 ```
 - 接下来实例化BuiltinCommandPack，BuiltinCommandPack里面其实initCommands初始化了很多命令，你用的时候看到的help，keymap, watch等命令集合对象全被初始化了。然后加入到命令解析器CommandResolver接入口中（注意BuiltinCommandPack实现CommandResolver）。
-![telent](../../../imgs/commands.png)
+![commands](../../../imgs/commands.png)
 - 接下来这一步注册通讯方式，现在支持两种，一种是telnet，一种是websocket，这里默认两种都初始化了，当然这里还可以扩展其他方式，这里做的好点其实可以基于SPI去模块扩展。
 #### 代码块
 ``` java
@@ -175,6 +175,9 @@ public TermServer listen(Handler<Future<TermServer>> listenHandler) {
 - 最后一步是arthasStart，其实仅仅是用于统计arthas使用情况。 好了，就可以接收客户端的命令输入了。
 
 ## 最后
+
+   最后的最后借用一张图来说明整个过程。
+   ![arthasflow](../../../imgs/arthasflow.png)
 
    上面只是我研究过程中，顺带记录下来的，有任何理解不对的地方可以指出来。
 
