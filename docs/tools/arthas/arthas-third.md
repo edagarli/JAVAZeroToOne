@@ -391,5 +391,5 @@ private class ProcessHandler implements Handler<CommandProcess> {
 ```
 
 ## 最后
- 1. 整个源码过程中
+ 1. 整个源码过程中还涉及到很多东西，一篇文章不能全部道来，只能把一部分流程写出来，希望有点帮忙。
  2. 上面只是我阅读源码过程中，顺带记录下来的，有任何理解不对的地方可以指出来。

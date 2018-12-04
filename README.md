@@ -3,6 +3,13 @@
 
 创造这件事吧，积累多了，就出来了，所以积累的知识沉淀下来，很重要。自己沉淀的知识分享出来，与大家一起成长。(有些文章我会发表在公众号或者sf博客，有些我会直接在github，反正最终尽量这边都会汇总一下)
 
+## 关于我
+- [SF](https://segmentfault.com/u/edagarli)
+- [微信公众号]![行走在创业的路上][1]
+
+
+
+
 ## 目录
 
 * [服务化](#服务化)
@@ -18,5 +25,10 @@
 
 ## 工具化
  ### Arthas
- - [Arthas第一篇之初步脚本分析](https://github.com/edagarli/JAVAZeroToOne/blob/master/docs/tools/arthas/arthas-first.md)
- - [Arthas第二篇之agent代理分析](https://github.com/edagarli/JAVAZeroToOne/blob/master/docs/tools/arthas/arthas-second.md)
+ - [Arthas源码第一篇之初步脚本分析](https://github.com/edagarli/JAVAZeroToOne/blob/master/docs/tools/arthas/arthas-first.md)
+ - [Arthas源码第二篇之agent代理分析](https://github.com/edagarli/JAVAZeroToOne/blob/master/docs/tools/arthas/arthas-second.md)
+ - [Arthas源码第三篇之命令执行过程](https://github.com/edagarli/JAVAZeroToOne/blob/master/docs/tools/arthas/arthas-third.md)
+
+
+
+[1]: /imgs/qrcode.jpg
