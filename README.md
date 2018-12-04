@@ -26,7 +26,8 @@
 ## 关于我
 
 - Segmentfault (https://segmentfault.com/u/edagarli)
-- 微信公众号
+- 微信公众号 
+
 ![行走在创业的路上][1]
 
 
