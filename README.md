@@ -6,16 +6,12 @@
 ## 目录
 
 * [基础](#基础)
-
 * [服务化](#服务化)
-
+* [分布式](#分布式)
 * [平台化](#平台化)
-
 * [工具化](#工具化)
-
   * [Arthas](#Arthas)
-
-    
+* [管理](#管理)
 
 ## 基础
 
@@ -25,7 +21,12 @@
 
 - [简单聊下RPC实现](https://mp.weixin.qq.com/s?__biz=MjM5NjA3MTQ4OA==&mid=2651715920&idx=1&sn=a3ecf8d4c07416a90447c5c975dc4a68&chksm=bd17887f8a600169f7c999a48d7ce643ade3d60c49b0db4c138c414ee5ebb0808661d7ed3928&token=1483051923&lang=zh_CN#rd)
 
+## 分布式
+
+
+
 ## 平台化
+
 - [平台化建设](https://mp.weixin.qq.com/s?__biz=MjM5NjA3MTQ4OA==&mid=2651715915&idx=1&sn=3d11dcdd5fc444df3f0928576f06f42d&chksm=bd1788648a6001721f85e90958392da8c70190771e5c6a31c2a6f9ea4c9f532133a7bdef7c6e&token=1483051923&lang=zh_CN#rd)
 
 ## 工具化
@@ -33,6 +34,12 @@
  - [Arthas源码第一篇之初步脚本分析](https://github.com/edagarli/JAVAZeroToOne/blob/master/docs/tools/arthas/arthas-first.md)
  - [Arthas源码第二篇之agent代理分析](https://github.com/edagarli/JAVAZeroToOne/blob/master/docs/tools/arthas/arthas-second.md)
  - [Arthas源码第三篇之命令执行过程](https://github.com/edagarli/JAVAZeroToOne/blob/master/docs/tools/arthas/arthas-third.md)
+
+## 管理
+
+- [技术管理之道随笔](https://mp.weixin.qq.com/s?__biz=MjM5NjA3MTQ4OA==&mid=2651715944&idx=1&sn=1ae506e92f3d4ae8781f25b7cb9db2ea&chksm=bd1788478a6001513e76e2e48b2480a39875d202b116f4b50fd8b654048ec1281393361e7ede&token=10260805&lang=zh_CN#rd)
+
+## 
 
 ## 关于我
 
