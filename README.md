@@ -10,6 +10,7 @@
 * [分布式](#分布式)
 * [平台化](#平台化)
 * [工具化](#工具化)
+  * [诊断工具](#诊断工具)
   * [Arthas](#Arthas)
 * [管理](#管理)
 * [创业](#创业)
@@ -17,9 +18,6 @@
 ## 基础
 
 - [聊聊事件驱动模型](https://mp.weixin.qq.com/s?__biz=MjM5NjA3MTQ4OA==&mid=2651715939&idx=1&sn=9d75066bb13fc1a9a59b6c1ebd3e466f&chksm=bd17884c8a60015a5bfe809ccdf497b6e819bd770f3b013eb5c42925d7445ff4ceac43938347&token=874714225&lang=zh_CN#rd)
-
-## 服务化
-
 
 ## 分布式
 
@@ -31,10 +29,10 @@
 - [二维火营销底层实践](https://segmentfault.com/a/1190000014910306)
 
 ## 工具化
- ### 诊断工具
+ #### 诊断工具
  - [聊聊线上问题诊断工具](https://mp.weixin.qq.com/s?__biz=MjM5NjA3MTQ4OA==&mid=2651715933&idx=1&sn=6ccd18ad9ce908c51fb98503ade91848&chksm=bd1788728a600164a2a27f507a495d0c9ea6f162dd6857b15ebb7258ca2848275cf06bfcc416&token=906664573&lang=zh_CN#rd)
  
- ### Arthas
+ #### Arthas
  - [Arthas源码第一篇之初步脚本分析](https://github.com/edagarli/JAVAZeroToOne/blob/master/docs/tools/arthas/arthas-first.md)
  - [Arthas源码第二篇之agent代理分析](https://github.com/edagarli/JAVAZeroToOne/blob/master/docs/tools/arthas/arthas-second.md)
  - [Arthas源码第三篇之命令执行过程](https://github.com/edagarli/JAVAZeroToOne/blob/master/docs/tools/arthas/arthas-third.md)
