@@ -22,7 +22,7 @@
 
 ## 领域模型
 
-- [聊聊对领域模型的思考]  doing
+- [聊聊对领域模型的思考](https://mp.weixin.qq.com/s?__biz=MjM5NjA3MTQ4OA==&mid=2651715969&idx=1&sn=07588ce4d2d19bb47bf2ea055b310e72&chksm=bd1788ae8a6001b8294af6759e7d872ad5fe354a418e312a08668d43bdc12507f3feb2e7b272&token=1352392465&lang=zh_CN#rd)
 
 ## 分布式
 
